@@ -1,0 +1,3 @@
+/home/jimkang/gcw/decomp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jimkang/gcw/decomp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jimkang/gcw/decomp/cmake-build-debug/CMakeFiles/decomp.dir

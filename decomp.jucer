@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="s2L6uB" name="decomp" projectType="consoleapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="DctpYo" name="decomp">
+    <GROUP id="{2673A749-8724-8443-34CB-30D8E98FE1D2}" name="Source">
+      <FILE id="KwfP6a" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="decomp"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="decomp"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../apps/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../apps/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../apps/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../apps/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../apps/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../apps/JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>

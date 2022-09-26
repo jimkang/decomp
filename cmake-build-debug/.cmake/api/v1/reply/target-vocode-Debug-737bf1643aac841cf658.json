@@ -1,0 +1,4847 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "decomp"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"jucer_project_end",
+			"target_link_libraries",
+			"_FRUT_set_compiler_and_linker_settings_Linux",
+			"_FRUT_set_compiler_and_linker_settings",
+			"target_compile_options",
+			"target_compile_definitions",
+			"_FRUT_set_AppConfig_compile_definitions",
+			"target_include_directories",
+			"set_target_properties",
+			"_FRUT_set_cxx_language_standard_properties"
+		],
+		"files" : 
+		[
+			"/home/jimkang/gcw/FRUT/prefix/FRUT/cmake/Reprojucer.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 114,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2322,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 2326,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 5363,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 5860,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 5880,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 5880,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 5880,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 5859,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 5878,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5802,
+				"parent" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 5378,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5224,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5234,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5231,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5231,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5231,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5231,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5231,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5231,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5258,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5240,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5798,
+				"parent" : 4
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 5286,
+				"parent" : 3
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 5353,
+				"parent" : 3
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 6161,
+				"parent" : 25
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-I/usr/include/x86_64-linux-gnu"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++14"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 11,
+					"define" : "DEBUG=1"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "JUCE_DISPLAY_SPLASH_SCREEN=1"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_core=1"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_data_structures=1"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_dsp=1"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_events=1"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "JUCE_REPORT_APP_USAGE=1"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "JUCE_STANDALONE_APPLICATION=1"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "JUCE_STRICT_REFCOUNTEDPOINTER=1"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "JUCE_USE_DARK_SPLASH_SCREEN=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "LINUX=1"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_DEBUG=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 24,
+					"path" : "/home/jimkang/gcw/decomp/cmake-build-debug/JuceLibraryCode"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "/home/jimkang/apps/JUCE/modules"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					26
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		}
+	],
+	"id" : "decomp::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-lcurl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "decomp",
+	"nameOnDisk" : "decomp",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "decomp\\Source",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "JUCE Library Code",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_basics\\audio_play_head",
+			"sourceIndexes" : 
+			[
+				8
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_basics\\buffers",
+			"sourceIndexes" : 
+			[
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_basics",
+			"sourceIndexes" : 
+			[
+				18,
+				19,
+				20
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_basics\\midi",
+			"sourceIndexes" : 
+			[
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_basics\\midi\\ump",
+			"sourceIndexes" : 
+			[
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_basics\\mpe",
+			"sourceIndexes" : 
+			[
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_basics\\native",
+			"sourceIndexes" : 
+			[
+				72
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_basics\\sources",
+			"sourceIndexes" : 
+			[
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_basics\\synthesisers",
+			"sourceIndexes" : 
+			[
+				91,
+				92
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_basics\\utilities",
+			"sourceIndexes" : 
+			[
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\codecs\\flac",
+			"sourceIndexes" : 
+			[
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				149,
+				150,
+				151,
+				152,
+				153
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\codecs\\flac\\libFLAC",
+			"sourceIndexes" : 
+			[
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\codecs\\flac\\libFLAC\\include\\private",
+			"sourceIndexes" : 
+			[
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\codecs\\flac\\libFLAC\\include\\protected",
+			"sourceIndexes" : 
+			[
+				139,
+				140,
+				141
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\codecs",
+			"sourceIndexes" : 
+			[
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\codecs\\oggvorbis",
+			"sourceIndexes" : 
+			[
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				245,
+				246,
+				247,
+				248
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\codecs\\oggvorbis\\libvorbis-1.3.7",
+			"sourceIndexes" : 
+			[
+				176,
+				177,
+				178,
+				179
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\codecs\\oggvorbis\\libvorbis-1.3.7\\lib",
+			"sourceIndexes" : 
+			[
+				180,
+				181,
+				182,
+				183,
+				184,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\codecs\\oggvorbis\\libvorbis-1.3.7\\lib\\books\\coupled",
+			"sourceIndexes" : 
+			[
+				185,
+				186
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\codecs\\oggvorbis\\libvorbis-1.3.7\\lib\\books\\floor",
+			"sourceIndexes" : 
+			[
+				187
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\codecs\\oggvorbis\\libvorbis-1.3.7\\lib\\books\\uncoupled",
+			"sourceIndexes" : 
+			[
+				188
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\codecs\\oggvorbis\\libvorbis-1.3.7\\lib\\modes",
+			"sourceIndexes" : 
+			[
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\format",
+			"sourceIndexes" : 
+			[
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats",
+			"sourceIndexes" : 
+			[
+				264,
+				265,
+				266
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_audio_formats\\sampler",
+			"sourceIndexes" : 
+			[
+				267,
+				268
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\containers",
+			"sourceIndexes" : 
+			[
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\files",
+			"sourceIndexes" : 
+			[
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\javascript",
+			"sourceIndexes" : 
+			[
+				315,
+				316,
+				317,
+				318
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core",
+			"sourceIndexes" : 
+			[
+				319,
+				320,
+				321
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\logging",
+			"sourceIndexes" : 
+			[
+				322,
+				323,
+				324,
+				325
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\maths",
+			"sourceIndexes" : 
+			[
+				326,
+				327,
+				328,
+				329,
+				330,
+				331,
+				332,
+				333,
+				334,
+				335
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\memory",
+			"sourceIndexes" : 
+			[
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\misc",
+			"sourceIndexes" : 
+			[
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\native\\java",
+			"sourceIndexes" : 
+			[
+				363
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\native\\java\\app\\com\\rmsl\\juce",
+			"sourceIndexes" : 
+			[
+				364,
+				365,
+				366
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\native\\javacore\\app\\com\\rmsl\\juce",
+			"sourceIndexes" : 
+			[
+				367
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\native\\javacore\\init\\com\\rmsl\\juce",
+			"sourceIndexes" : 
+			[
+				368
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\native",
+			"sourceIndexes" : 
+			[
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391,
+				392,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400,
+				401
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\network",
+			"sourceIndexes" : 
+			[
+				402,
+				403,
+				404,
+				405,
+				406,
+				407,
+				408,
+				409,
+				410,
+				411,
+				412,
+				413
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\streams",
+			"sourceIndexes" : 
+			[
+				414,
+				415,
+				416,
+				417,
+				418,
+				419,
+				420,
+				421,
+				422,
+				423,
+				424,
+				425,
+				426,
+				427,
+				428,
+				429,
+				430
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\system",
+			"sourceIndexes" : 
+			[
+				431,
+				432,
+				433,
+				434,
+				435,
+				436,
+				437
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\text",
+			"sourceIndexes" : 
+			[
+				438,
+				439,
+				440,
+				441,
+				442,
+				443,
+				444,
+				445,
+				446,
+				447,
+				448,
+				449,
+				450,
+				451,
+				452,
+				453,
+				454,
+				455,
+				456,
+				457,
+				458,
+				459,
+				460,
+				461
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\threads",
+			"sourceIndexes" : 
+			[
+				462,
+				463,
+				464,
+				465,
+				466,
+				467,
+				468,
+				469,
+				470,
+				471,
+				472,
+				473,
+				474,
+				475,
+				476,
+				477,
+				478,
+				479,
+				480,
+				481,
+				482,
+				483,
+				484
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\time",
+			"sourceIndexes" : 
+			[
+				485,
+				486,
+				487,
+				488,
+				489,
+				490
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\unit_tests",
+			"sourceIndexes" : 
+			[
+				491,
+				492,
+				493
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\xml",
+			"sourceIndexes" : 
+			[
+				494,
+				495,
+				496,
+				497
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\zip",
+			"sourceIndexes" : 
+			[
+				498,
+				499,
+				500,
+				501,
+				502,
+				503
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_core\\zip\\zlib",
+			"sourceIndexes" : 
+			[
+				504,
+				505,
+				506,
+				507,
+				508,
+				509,
+				510,
+				511,
+				512,
+				513,
+				514,
+				515,
+				516,
+				517,
+				518,
+				519,
+				520,
+				521,
+				522,
+				523,
+				524,
+				525,
+				526
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_data_structures\\app_properties",
+			"sourceIndexes" : 
+			[
+				527,
+				528,
+				529,
+				530
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_data_structures",
+			"sourceIndexes" : 
+			[
+				531,
+				532,
+				533
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_data_structures\\undomanager",
+			"sourceIndexes" : 
+			[
+				534,
+				535,
+				536
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_data_structures\\values",
+			"sourceIndexes" : 
+			[
+				537,
+				538,
+				539,
+				540,
+				541,
+				542,
+				543,
+				544,
+				545,
+				546
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_dsp\\containers",
+			"sourceIndexes" : 
+			[
+				547,
+				548,
+				549,
+				550,
+				551,
+				552,
+				553
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_dsp\\filter_design",
+			"sourceIndexes" : 
+			[
+				554,
+				555
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_dsp\\frequency",
+			"sourceIndexes" : 
+			[
+				556,
+				557,
+				558,
+				559,
+				560,
+				561,
+				562,
+				563
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_dsp",
+			"sourceIndexes" : 
+			[
+				564,
+				565,
+				566
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_dsp\\maths",
+			"sourceIndexes" : 
+			[
+				567,
+				568,
+				569,
+				570,
+				571,
+				572,
+				573,
+				574,
+				575,
+				576,
+				577,
+				578
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_dsp\\native",
+			"sourceIndexes" : 
+			[
+				579,
+				580,
+				581,
+				582,
+				583,
+				584,
+				585
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_dsp\\processors",
+			"sourceIndexes" : 
+			[
+				586,
+				587,
+				588,
+				589,
+				590,
+				591,
+				592,
+				593,
+				594,
+				595,
+				596,
+				597,
+				598,
+				599,
+				600,
+				601,
+				602,
+				603,
+				604,
+				605,
+				606,
+				607,
+				608,
+				609,
+				610,
+				611,
+				612,
+				613
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_dsp\\widgets",
+			"sourceIndexes" : 
+			[
+				614,
+				615,
+				616,
+				617,
+				618,
+				619,
+				620,
+				621,
+				622,
+				623,
+				624,
+				625,
+				626,
+				627,
+				628,
+				629,
+				630
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_events\\broadcasters",
+			"sourceIndexes" : 
+			[
+				631,
+				632,
+				633,
+				634,
+				635,
+				636,
+				637,
+				638
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_events\\interprocess",
+			"sourceIndexes" : 
+			[
+				639,
+				640,
+				641,
+				642,
+				643,
+				644,
+				645,
+				646
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_events",
+			"sourceIndexes" : 
+			[
+				647,
+				648,
+				649
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_events\\messages",
+			"sourceIndexes" : 
+			[
+				650,
+				651,
+				652,
+				653,
+				654,
+				655,
+				656,
+				657,
+				658,
+				659,
+				660,
+				661,
+				662
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_events\\native",
+			"sourceIndexes" : 
+			[
+				663,
+				664,
+				665,
+				666,
+				667,
+				668,
+				669,
+				670,
+				671,
+				672,
+				673,
+				674
+			]
+		},
+		{
+			"name" : "JUCE Modules\\juce_events\\timers",
+			"sourceIndexes" : 
+			[
+				675,
+				676,
+				677,
+				678
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "cmake-build-debug/JuceLibraryCode/JuceHeader.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/JuceLibraryCode/include_juce_audio_basics.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/JuceLibraryCode/include_juce_audio_formats.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/JuceLibraryCode/include_juce_core.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/JuceLibraryCode/include_juce_data_structures.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/JuceLibraryCode/include_juce_dsp.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/JuceLibraryCode/include_juce_events.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/buffers/juce_AudioDataConverters.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/buffers/juce_AudioDataConverters.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/buffers/juce_AudioProcessLoadMeasurer.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/buffers/juce_AudioProcessLoadMeasurer.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/buffers/juce_AudioSampleBuffer.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/buffers/juce_FloatVectorOperations.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/buffers/juce_FloatVectorOperations.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/juce_audio_basics.h",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/juce_audio_basics.mm",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiBuffer.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiBuffer.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiDataConcatenator.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiFile.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiFile.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiKeyboardState.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiKeyboardState.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiMessage.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiMessage.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiMessageSequence.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiMessageSequence.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiRPN.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/juce_MidiRPN.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMP.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPConversion.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPConverters.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPDispatcher.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPFactory.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPIterator.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPMidi1ToBytestreamTranslator.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPMidi1ToMidi2DefaultTranslator.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPMidi1ToMidi2DefaultTranslator.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPProtocols.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPReceiver.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPSysEx7.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPSysEx7.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPTests.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPUtils.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPUtils.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPView.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPView.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPacket.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/midi/ump/juce_UMPackets.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPEInstrument.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPEInstrument.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPEMessages.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPEMessages.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPENote.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPENote.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPESynthesiser.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPESynthesiser.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPESynthesiserBase.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPESynthesiserBase.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPESynthesiserVoice.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPESynthesiserVoice.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPEUtils.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPEUtils.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPEValue.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPEValue.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPEZoneLayout.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/mpe/juce_MPEZoneLayout.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/native/juce_mac_CoreAudioLayouts.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_AudioSource.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_BufferingAudioSource.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_BufferingAudioSource.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_ChannelRemappingAudioSource.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_ChannelRemappingAudioSource.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_IIRFilterAudioSource.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_IIRFilterAudioSource.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_MemoryAudioSource.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_MemoryAudioSource.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_MixerAudioSource.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_MixerAudioSource.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_PositionableAudioSource.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_ResamplingAudioSource.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_ResamplingAudioSource.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_ReverbAudioSource.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_ReverbAudioSource.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_ToneGeneratorAudioSource.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/sources/juce_ToneGeneratorAudioSource.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/synthesisers/juce_Synthesiser.cpp",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/synthesisers/juce_Synthesiser.h",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_ADSR.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_ADSR_test.cpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_Decibels.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_GenericInterpolator.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_IIRFilter.cpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_IIRFilter.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_Interpolators.cpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_Interpolators.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_LagrangeInterpolator.cpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_Reverb.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_SmoothedValue.cpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_SmoothedValue.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_basics/utilities/juce_WindowedSincInterpolator.cpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/Flac Licence.txt",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/all.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/alloc.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/assert.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/callback.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/compat.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/endswap.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/export.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/format.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/bitmath.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/bitreader.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/bitwriter.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/cpu.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/crc.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/fixed.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/float.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/format.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/all.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitmath.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitreader.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitwriter.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/cpu.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/crc.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/fixed.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/float.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/format.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/lpc.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/md5.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/memory.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/metadata.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/stream_encoder.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/stream_encoder_framing.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/window.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/protected/all.h",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/protected/stream_decoder.h",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/protected/stream_encoder.h",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_flac.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/md5.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/memory.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/stream_decoder.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/stream_encoder.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/stream_encoder_framing.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/window_flac.c",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/metadata.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/ordinals.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/stream_decoder.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/stream_encoder.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/flac/win_utf8_io.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_AiffAudioFormat.cpp",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_AiffAudioFormat.h",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_CoreAudioFormat.cpp",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_CoreAudioFormat.h",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_FlacAudioFormat.cpp",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_FlacAudioFormat.h",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_LAMEEncoderAudioFormat.cpp",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_LAMEEncoderAudioFormat.h",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_MP3AudioFormat.cpp",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_MP3AudioFormat.h",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_OggVorbisAudioFormat.cpp",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_OggVorbisAudioFormat.h",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_WavAudioFormat.cpp",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_WavAudioFormat.h",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_WindowsMediaAudioFormat.cpp",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/juce_WindowsMediaAudioFormat.h",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/Ogg Vorbis Licence.txt",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/bitwise.c",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/codec.h",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/config_types.h",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/crctable.h",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/framing.c",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/AUTHORS",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/CHANGES",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/COPYING",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/README.md",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/analysis.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/backends.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/bitrate.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/bitrate.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/block.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/coupled/res_books_51.h",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/coupled/res_books_stereo.h",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/floor/floor_books.h",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/uncoupled/res_books_uncoupled.h",
+			"sourceGroupIndex" : 22
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/codebook.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/codebook.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/codec_internal.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/envelope.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/envelope.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/floor0.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/floor1.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/highlevel.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/info.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lookup.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lookup.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lookup_data.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lpc.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lpc.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lsp.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lsp.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/mapping0.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/masking.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/mdct.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/mdct.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/misc.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/misc.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/floor_all.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_11.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_16.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_44.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_8.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_16.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_44.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_44p51.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_44u.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_8.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_11.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_16.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_22.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_32.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_44.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_44p51.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_44u.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_8.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_X.h",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/os.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/psy.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/psy.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/registry.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/registry.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/res0.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/scales.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/sharedbook.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/smallft.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/smallft.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/synthesis.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/vorbisenc.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/vorbisfile.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/window.c",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/window.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/ogg.h",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/os_types.h",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/vorbisenc.h",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/codecs/oggvorbis/vorbisfile.h",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_AudioFormat.cpp",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_AudioFormat.h",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_AudioFormatManager.cpp",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_AudioFormatManager.h",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_AudioFormatReader.cpp",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_AudioFormatReader.h",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_AudioFormatReaderSource.cpp",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_AudioFormatReaderSource.h",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_AudioFormatWriter.cpp",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_AudioFormatWriter.h",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_AudioSubsectionReader.cpp",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_AudioSubsectionReader.h",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_BufferingAudioFormatReader.cpp",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_BufferingAudioFormatReader.h",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/format/juce_MemoryMappedAudioFormatReader.h",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/juce_audio_formats.h",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/juce_audio_formats.mm",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/sampler/juce_Sampler.cpp",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_audio_formats/sampler/juce_Sampler.h",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_AbstractFifo.cpp",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_AbstractFifo.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_Array.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_ArrayAllocationBase.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_ArrayBase.cpp",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_ArrayBase.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_DynamicObject.cpp",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_DynamicObject.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_ElementComparator.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_HashMap.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_HashMap_test.cpp",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_LinkedListPointer.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_ListenerList.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_NamedValueSet.cpp",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_NamedValueSet.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_OwnedArray.cpp",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_OwnedArray.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_PropertySet.cpp",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_PropertySet.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_ReferenceCountedArray.cpp",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_ReferenceCountedArray.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_ScopedValueSetter.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_SortedSet.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_SparseSet.cpp",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_SparseSet.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_Variant.cpp",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/containers/juce_Variant.h",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_DirectoryIterator.cpp",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_DirectoryIterator.h",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_File.cpp",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_File.h",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_FileFilter.cpp",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_FileFilter.h",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_FileInputStream.cpp",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_FileInputStream.h",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_FileOutputStream.cpp",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_FileOutputStream.h",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_FileSearchPath.cpp",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_FileSearchPath.h",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_MemoryMappedFile.h",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_RangedDirectoryIterator.cpp",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_RangedDirectoryIterator.h",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_TemporaryFile.cpp",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_TemporaryFile.h",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_WildcardFileFilter.cpp",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/files/juce_WildcardFileFilter.h",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/javascript/juce_JSON.cpp",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/javascript/juce_JSON.h",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/javascript/juce_Javascript.cpp",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/javascript/juce_Javascript.h",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/juce_core.cpp",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/juce_core.h",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/juce_core.mm",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/logging/juce_FileLogger.cpp",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/logging/juce_FileLogger.h",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/logging/juce_Logger.cpp",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/logging/juce_Logger.h",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/maths/juce_BigInteger.cpp",
+			"sourceGroupIndex" : 32
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/maths/juce_BigInteger.h",
+			"sourceGroupIndex" : 32
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/maths/juce_Expression.cpp",
+			"sourceGroupIndex" : 32
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/maths/juce_Expression.h",
+			"sourceGroupIndex" : 32
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/maths/juce_MathsFunctions.h",
+			"sourceGroupIndex" : 32
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/maths/juce_NormalisableRange.h",
+			"sourceGroupIndex" : 32
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/maths/juce_Random.cpp",
+			"sourceGroupIndex" : 32
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/maths/juce_Random.h",
+			"sourceGroupIndex" : 32
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/maths/juce_Range.h",
+			"sourceGroupIndex" : 32
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/maths/juce_StatisticsAccumulator.h",
+			"sourceGroupIndex" : 32
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_AllocationHooks.cpp",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_AllocationHooks.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_Atomic.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_ByteOrder.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_ContainerDeletePolicy.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_HeapBlock.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_HeavyweightLeakedObjectDetector.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_LeakedObjectDetector.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_Memory.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_MemoryBlock.cpp",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_MemoryBlock.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_OptionalScopedPointer.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_ReferenceCountedObject.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_ScopedPointer.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_SharedResourcePointer.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_Singleton.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/memory/juce_WeakReference.h",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/misc/juce_ConsoleApplication.cpp",
+			"sourceGroupIndex" : 34
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/misc/juce_ConsoleApplication.h",
+			"sourceGroupIndex" : 34
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/misc/juce_Functional.h",
+			"sourceGroupIndex" : 34
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/misc/juce_Result.cpp",
+			"sourceGroupIndex" : 34
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/misc/juce_Result.h",
+			"sourceGroupIndex" : 34
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/misc/juce_RuntimePermissions.cpp",
+			"sourceGroupIndex" : 34
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/misc/juce_RuntimePermissions.h",
+			"sourceGroupIndex" : 34
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/misc/juce_Uuid.cpp",
+			"sourceGroupIndex" : 34
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/misc/juce_Uuid.h",
+			"sourceGroupIndex" : 34
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/misc/juce_WindowsRegistry.h",
+			"sourceGroupIndex" : 34
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/java/README.txt",
+			"sourceGroupIndex" : 35
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/java/app/com/rmsl/juce/FragmentOverlay.java",
+			"sourceGroupIndex" : 36
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/java/app/com/rmsl/juce/JuceHTTPStream.java",
+			"sourceGroupIndex" : 36
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/java/app/com/rmsl/juce/JuceInvocationHandler.java",
+			"sourceGroupIndex" : 36
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/javacore/app/com/rmsl/juce/JuceApp.java",
+			"sourceGroupIndex" : 37
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/javacore/init/com/rmsl/juce/Java.java",
+			"sourceGroupIndex" : 38
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_BasicNativeHeaders.h",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_android_Files.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_android_JNIHelpers.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_android_JNIHelpers.h",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_android_Misc.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_android_Network.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_android_RuntimePermissions.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_android_SystemStats.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_android_Threads.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_curl_Network.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_intel_SharedCode.h",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_linux_CommonFile.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_linux_Files.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_linux_Network.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_linux_SystemStats.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_linux_Threads.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_mac_CFHelpers.h",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_mac_Files.mm",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_mac_Network.mm",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_mac_ObjCHelpers.h",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_mac_Strings.mm",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_mac_SystemStats.mm",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_mac_Threads.mm",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_posix_IPAddress.h",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_posix_NamedPipe.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_posix_SharedCode.h",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_wasm_SystemStats.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_win32_ComSmartPtr.h",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_win32_Files.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_win32_Network.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_win32_Registry.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_win32_SystemStats.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/native/juce_win32_Threads.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/network/juce_IPAddress.cpp",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/network/juce_IPAddress.h",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/network/juce_MACAddress.cpp",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/network/juce_MACAddress.h",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/network/juce_NamedPipe.cpp",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/network/juce_NamedPipe.h",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/network/juce_Socket.cpp",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/network/juce_Socket.h",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/network/juce_URL.cpp",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/network/juce_URL.h",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/network/juce_WebInputStream.cpp",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/network/juce_WebInputStream.h",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_BufferedInputStream.cpp",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_BufferedInputStream.h",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_FileInputSource.cpp",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_FileInputSource.h",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_InputSource.h",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_InputStream.cpp",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_InputStream.h",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_MemoryInputStream.cpp",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_MemoryInputStream.h",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_MemoryOutputStream.cpp",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_MemoryOutputStream.h",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_OutputStream.cpp",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_OutputStream.h",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_SubregionStream.cpp",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_SubregionStream.h",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_URLInputSource.cpp",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/streams/juce_URLInputSource.h",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/system/juce_CompilerSupport.h",
+			"sourceGroupIndex" : 42
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/system/juce_CompilerWarnings.h",
+			"sourceGroupIndex" : 42
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/system/juce_PlatformDefs.h",
+			"sourceGroupIndex" : 42
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/system/juce_StandardHeader.h",
+			"sourceGroupIndex" : 42
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/system/juce_SystemStats.cpp",
+			"sourceGroupIndex" : 42
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/system/juce_SystemStats.h",
+			"sourceGroupIndex" : 42
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/system/juce_TargetPlatform.h",
+			"sourceGroupIndex" : 42
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_Base64.cpp",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_Base64.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_CharPointer_ASCII.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_CharPointer_UTF16.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_CharPointer_UTF32.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_CharPointer_UTF8.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_CharacterFunctions.cpp",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_CharacterFunctions.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_Identifier.cpp",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_Identifier.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_LocalisedStrings.cpp",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_LocalisedStrings.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_NewLine.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_String.cpp",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_String.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_StringArray.cpp",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_StringArray.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_StringPairArray.cpp",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_StringPairArray.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_StringPool.cpp",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_StringPool.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_StringRef.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_TextDiff.cpp",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/text/juce_TextDiff.h",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_ChildProcess.cpp",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_ChildProcess.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_CriticalSection.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_DynamicLibrary.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_HighResolutionTimer.cpp",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_HighResolutionTimer.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_InterProcessLock.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_Process.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_ReadWriteLock.cpp",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_ReadWriteLock.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_ScopedLock.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_ScopedReadLock.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_ScopedWriteLock.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_SpinLock.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_Thread.cpp",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_Thread.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_ThreadLocalValue.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_ThreadPool.cpp",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_ThreadPool.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_TimeSliceThread.cpp",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_TimeSliceThread.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_WaitableEvent.cpp",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/threads/juce_WaitableEvent.h",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/time/juce_PerformanceCounter.cpp",
+			"sourceGroupIndex" : 45
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/time/juce_PerformanceCounter.h",
+			"sourceGroupIndex" : 45
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/time/juce_RelativeTime.cpp",
+			"sourceGroupIndex" : 45
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/time/juce_RelativeTime.h",
+			"sourceGroupIndex" : 45
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/time/juce_Time.cpp",
+			"sourceGroupIndex" : 45
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/time/juce_Time.h",
+			"sourceGroupIndex" : 45
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/unit_tests/juce_UnitTest.cpp",
+			"sourceGroupIndex" : 46
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/unit_tests/juce_UnitTest.h",
+			"sourceGroupIndex" : 46
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/unit_tests/juce_UnitTestCategories.h",
+			"sourceGroupIndex" : 46
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/xml/juce_XmlDocument.cpp",
+			"sourceGroupIndex" : 47
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/xml/juce_XmlDocument.h",
+			"sourceGroupIndex" : 47
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/xml/juce_XmlElement.cpp",
+			"sourceGroupIndex" : 47
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/xml/juce_XmlElement.h",
+			"sourceGroupIndex" : 47
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/juce_GZIPCompressorOutputStream.cpp",
+			"sourceGroupIndex" : 48
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/juce_GZIPCompressorOutputStream.h",
+			"sourceGroupIndex" : 48
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/juce_GZIPDecompressorInputStream.cpp",
+			"sourceGroupIndex" : 48
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/juce_GZIPDecompressorInputStream.h",
+			"sourceGroupIndex" : 48
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/juce_ZipFile.cpp",
+			"sourceGroupIndex" : 48
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/juce_ZipFile.h",
+			"sourceGroupIndex" : 48
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/README",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/adler32.c",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/compress.c",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/crc32.c",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/crc32.h",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/deflate.c",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/deflate.h",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/infback.c",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/inffast.c",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/inffast.h",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/inffixed.h",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/inflate.c",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/inflate.h",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/inftrees.c",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/inftrees.h",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/trees.c",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/trees.h",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/uncompr.c",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/zconf.h",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/zconf.in.h",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/zlib.h",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/zutil.c",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_core/zip/zlib/zutil.h",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.cpp",
+			"sourceGroupIndex" : 50
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.h",
+			"sourceGroupIndex" : 50
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.cpp",
+			"sourceGroupIndex" : 50
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.h",
+			"sourceGroupIndex" : 50
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/juce_data_structures.cpp",
+			"sourceGroupIndex" : 51
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/juce_data_structures.h",
+			"sourceGroupIndex" : 51
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/juce_data_structures.mm",
+			"sourceGroupIndex" : 51
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/undomanager/juce_UndoManager.cpp",
+			"sourceGroupIndex" : 52
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/undomanager/juce_UndoManager.h",
+			"sourceGroupIndex" : 52
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/undomanager/juce_UndoableAction.h",
+			"sourceGroupIndex" : 52
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/values/juce_CachedValue.cpp",
+			"sourceGroupIndex" : 53
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/values/juce_CachedValue.h",
+			"sourceGroupIndex" : 53
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/values/juce_Value.cpp",
+			"sourceGroupIndex" : 53
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/values/juce_Value.h",
+			"sourceGroupIndex" : 53
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/values/juce_ValueTree.cpp",
+			"sourceGroupIndex" : 53
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/values/juce_ValueTree.h",
+			"sourceGroupIndex" : 53
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.cpp",
+			"sourceGroupIndex" : 53
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h",
+			"sourceGroupIndex" : 53
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.cpp",
+			"sourceGroupIndex" : 53
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h",
+			"sourceGroupIndex" : 53
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/containers/juce_AudioBlock.h",
+			"sourceGroupIndex" : 54
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/containers/juce_AudioBlock_test.cpp",
+			"sourceGroupIndex" : 54
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/containers/juce_FixedSizeFunction.h",
+			"sourceGroupIndex" : 54
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/containers/juce_FixedSizeFunction_test.cpp",
+			"sourceGroupIndex" : 54
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/containers/juce_SIMDRegister.h",
+			"sourceGroupIndex" : 54
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/containers/juce_SIMDRegister_Impl.h",
+			"sourceGroupIndex" : 54
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/containers/juce_SIMDRegister_test.cpp",
+			"sourceGroupIndex" : 54
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/filter_design/juce_FilterDesign.cpp",
+			"sourceGroupIndex" : 55
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/filter_design/juce_FilterDesign.h",
+			"sourceGroupIndex" : 55
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/frequency/juce_Convolution.cpp",
+			"sourceGroupIndex" : 56
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/frequency/juce_Convolution.h",
+			"sourceGroupIndex" : 56
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/frequency/juce_Convolution_test.cpp",
+			"sourceGroupIndex" : 56
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/frequency/juce_FFT.cpp",
+			"sourceGroupIndex" : 56
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/frequency/juce_FFT.h",
+			"sourceGroupIndex" : 56
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/frequency/juce_FFT_test.cpp",
+			"sourceGroupIndex" : 56
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/frequency/juce_Windowing.cpp",
+			"sourceGroupIndex" : 56
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/frequency/juce_Windowing.h",
+			"sourceGroupIndex" : 56
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/juce_dsp.cpp",
+			"sourceGroupIndex" : 57
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/juce_dsp.h",
+			"sourceGroupIndex" : 57
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/juce_dsp.mm",
+			"sourceGroupIndex" : 57
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/maths/juce_FastMathApproximations.h",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/maths/juce_LogRampedValue.h",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/maths/juce_LogRampedValue_test.cpp",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/maths/juce_LookupTable.cpp",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/maths/juce_LookupTable.h",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/maths/juce_Matrix.cpp",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/maths/juce_Matrix.h",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/maths/juce_Matrix_test.cpp",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/maths/juce_Phase.h",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/maths/juce_Polynomial.h",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.cpp",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.h",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/native/juce_avx_SIMDNativeOps.cpp",
+			"sourceGroupIndex" : 59
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/native/juce_avx_SIMDNativeOps.h",
+			"sourceGroupIndex" : 59
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/native/juce_fallback_SIMDNativeOps.h",
+			"sourceGroupIndex" : 59
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/native/juce_neon_SIMDNativeOps.cpp",
+			"sourceGroupIndex" : 59
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/native/juce_neon_SIMDNativeOps.h",
+			"sourceGroupIndex" : 59
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/native/juce_sse_SIMDNativeOps.cpp",
+			"sourceGroupIndex" : 59
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/native/juce_sse_SIMDNativeOps.h",
+			"sourceGroupIndex" : 59
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_BallisticsFilter.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_BallisticsFilter.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_DelayLine.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_DelayLine.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_DryWetMixer.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_DryWetMixer.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_FIRFilter.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_FIRFilter.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_FIRFilter_test.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_FirstOrderTPTFilter.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_FirstOrderTPTFilter.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_IIRFilter.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_IIRFilter.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_IIRFilter_Impl.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_LinkwitzRileyFilter.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_LinkwitzRileyFilter.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_Oversampling.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_Oversampling.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_Panner.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_Panner.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_ProcessContext.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_ProcessorChain.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_ProcessorChain_test.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_ProcessorDuplicator.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_ProcessorWrapper.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_StateVariableFilter.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_StateVariableTPTFilter.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/processors/juce_StateVariableTPTFilter.h",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_Bias.h",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_Chorus.cpp",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_Chorus.h",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_Compressor.cpp",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_Compressor.h",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_Gain.h",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_LadderFilter.cpp",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_LadderFilter.h",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_Limiter.cpp",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_Limiter.h",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_NoiseGate.cpp",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_NoiseGate.h",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_Oscillator.h",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_Phaser.cpp",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_Phaser.h",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_Reverb.h",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_dsp/widgets/juce_WaveShaper.h",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.cpp",
+			"sourceGroupIndex" : 62
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h",
+			"sourceGroupIndex" : 62
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/broadcasters/juce_ActionListener.h",
+			"sourceGroupIndex" : 62
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.cpp",
+			"sourceGroupIndex" : 62
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.h",
+			"sourceGroupIndex" : 62
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/broadcasters/juce_ChangeBroadcaster.cpp",
+			"sourceGroupIndex" : 62
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/broadcasters/juce_ChangeBroadcaster.h",
+			"sourceGroupIndex" : 62
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/broadcasters/juce_ChangeListener.h",
+			"sourceGroupIndex" : 62
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/interprocess/juce_ConnectedChildProcess.cpp",
+			"sourceGroupIndex" : 63
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/interprocess/juce_ConnectedChildProcess.h",
+			"sourceGroupIndex" : 63
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/interprocess/juce_InterprocessConnection.cpp",
+			"sourceGroupIndex" : 63
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/interprocess/juce_InterprocessConnection.h",
+			"sourceGroupIndex" : 63
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/interprocess/juce_InterprocessConnectionServer.cpp",
+			"sourceGroupIndex" : 63
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/interprocess/juce_InterprocessConnectionServer.h",
+			"sourceGroupIndex" : 63
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/interprocess/juce_NetworkServiceDiscovery.cpp",
+			"sourceGroupIndex" : 63
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/interprocess/juce_NetworkServiceDiscovery.h",
+			"sourceGroupIndex" : 63
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/juce_events.cpp",
+			"sourceGroupIndex" : 64
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/juce_events.h",
+			"sourceGroupIndex" : 64
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/juce_events.mm",
+			"sourceGroupIndex" : 64
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_ApplicationBase.cpp",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_ApplicationBase.h",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_CallbackMessage.h",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_DeletedAtShutdown.cpp",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_DeletedAtShutdown.h",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_Initialisation.h",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_Message.h",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_MessageListener.cpp",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_MessageListener.h",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_MessageManager.cpp",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_MessageManager.h",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_MountedVolumeListChangeDetector.h",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/messages/juce_NotificationType.h",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/native/juce_ScopedLowPowerModeDisabler.cpp",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/native/juce_ScopedLowPowerModeDisabler.h",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/native/juce_android_Messaging.cpp",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/native/juce_ios_MessageManager.mm",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/native/juce_linux_EventLoop.h",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/native/juce_linux_Messaging.cpp",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/native/juce_mac_MessageManager.mm",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/native/juce_osx_MessageQueue.h",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/native/juce_win32_HiddenMessageWindow.h",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/native/juce_win32_Messaging.cpp",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/native/juce_win32_WinRTWrapper.cpp",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/native/juce_win32_WinRTWrapper.h",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/timers/juce_MultiTimer.cpp",
+			"sourceGroupIndex" : 67
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/timers/juce_MultiTimer.h",
+			"sourceGroupIndex" : 67
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/timers/juce_Timer.cpp",
+			"sourceGroupIndex" : 67
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/jimkang/apps/JUCE/modules/juce_events/timers/juce_Timer.h",
+			"sourceGroupIndex" : 67
+		}
+	],
+	"type" : "EXECUTABLE"
+}
