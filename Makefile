@@ -7,7 +7,7 @@ try:
 	cd build && ./decomp ../example-media/donut.wav 8 ../example-media
 
 debug:
-	cd build && gdb --args decomp ../example-media/donut.wav ../example-media/talking.wav ../example-media/result.wav
+	cd build && gdb --args decomp ../example-media/donut.wav 8 ../example-media/
 
 steps:
 	./build/decomp --step HannWindow logs/020-carrier-highpass-b.txt step-logs/030-carrier-hann-b.txt

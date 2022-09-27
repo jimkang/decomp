@@ -9,12 +9,12 @@
 using namespace juce;
 using namespace std;
 
-static void
-decompChannel(vector<float> &inputSamples, vector<float> &infoSamples, double sampleRate, vector<float> &outSamples);
+static vector<vector<float>> decompChannel(
+  vector<float> &inputSamples, double sampleRate, int numberOfOuts);
 
-static void
-decompBlock(vector<float> &inputBlockSamples, vector<float> &infoBlockSamples, IIRFilter &inputHighPassFilter,
-            IIRFilter &infoHighPassFilter, vector<float> &outBlockSamples, int blockIndex);
+static vector<vector<float>> decompBlock(
+  vector<float> &inputBlockSamples, IIRFilter &inputHighPassFilter,
+  IIRFilter &infoHighPassFilter, int numberOfOuts, int blockIndex);
 
 static void getReducedCombinedAmpFactors(
         ComplexFFTArray &inputFFTData, ComplexFFTArray &infoFFTData, FFTArray &reducedAmpFactors);
@@ -33,52 +33,31 @@ static void decomp(AudioBuffer<float> &inputBuffer,
   for (int ch = 0; ch < channelCount; ++ch) {
     // Copy the arrays into vectors.
     vector<float> inputSamples(inputBuffer.getReadPointer(ch), inputBuffer.getReadPointer(ch) + maxSamples);
-    vector<vector<float>> outSamplesCollection;
+    vector<vector<float>> outSamplesCollection = decompChannel(
+      inputSamples, sampleRate, outBuffers.size()
+    );
+    cout << "outSamplesCollection length: " << outSamplesCollection.size() << endl;
 
-    for (auto it = outBuffers.begin(); it != outBuffers.end(); ++it) {
-      vector<float> outputSamples(
-        it->getReadPointer(ch), it->getReadPointer(ch) + maxSamples
-      );
-
-      // Test by copying.
-      for (int i = 0; i < outputSamples.size(); ++i) {
-        outputSamples[i] = inputSamples[i];
-      }
-      cout << "outputSamples value: " << outputSamples[1000] << endl;
-
-      // Whoa, this is copying the vector. If you do this before setting the
-      // values, the changes don't make it to outSamplesCollection!
-      outSamplesCollection.push_back(outputSamples);
-    }
-
-    //decompChannel(inputSamples, infoSamples, sampleRate, outSamples);
-
-    //for (auto it = outSamples.begin(); it != outSamples.end(); ++it) {
-    //if (*it > 0.01) {
-    //cout << "hey";
-    //}
-    //}
-    int bufferNumber = 0;
-    for (auto it = outBuffers.begin(); it != outBuffers.end(); ++it) {
-      float *outWritePtr = it->getWritePointer(ch);
-      vector<float> outputSamples = outSamplesCollection[bufferNumber];
+    for (int outNumber = 0; outNumber < outSamplesCollection.size(); ++outNumber) {
+      cout << "outNumber: " << outNumber << endl;
+      float *outWritePtr = outBuffers[outNumber].getWritePointer(ch);
+      vector<float> outputSamples = outSamplesCollection[outNumber];
+      cout << "outputSamples length at end: " << outputSamples.size() << endl;
       cout << "outputSamples value at end: " << outputSamples[1000] << endl;
       for (int i = 0; i < outputSamples.size(); ++i) {
         outWritePtr[i] = outputSamples[i];
       }
-      bufferNumber += 1;
     }
   }
 }
 
-static void
-decompChannel(vector<float> &inputSamples, vector<float> &infoSamples, double sampleRate, vector<float> &outSamples) {
-    const int maxBlocks = outSamples.size() / blockSize;
+static vector<vector<float>> decompChannel(vector<float> &inputSamples,
+  double sampleRate, int numberOfOuts) {
+
+    const int maxBlocks = inputSamples.size() / blockSize;
     // Leave out the last partial block for now.
 
     auto inputStart = inputSamples.begin();
-    auto infoStart = infoSamples.begin();
-    auto outStart = outSamples.begin();
 
     IIRFilter inputHighPassFilter;
     IIRFilter infoHighPassFilter;
@@ -86,94 +65,95 @@ decompChannel(vector<float> &inputSamples, vector<float> &infoSamples, double sa
     inputHighPassFilter.setCoefficients(IIRCoefficients::makeHighPass(sampleRate, freq));
     infoHighPassFilter.setCoefficients(IIRCoefficients::makeHighPass(sampleRate, freq));
 
-    //for (int i = 0; i < outSamples.size(); ++i) {
-    //outSamples[i] = inputSamples[i];
-    //}
-    //return;
+    vector<vector<float>> outChannelSamplesCollection;
+    for (int i = 0; i < numberOfOuts; ++i) {
+      vector<float> outChannelSamples(inputSamples.size());
+      outChannelSamplesCollection.push_back(outChannelSamples);
+    }
 
     for (int blockIndex = 0; blockIndex < maxBlocks; ++blockIndex) {
-        cout << "vocoding block  " << blockIndex << endl;
-        const int sampleIndex = blockIndex * blockSize;
+      cout << "analyzing block  " << blockIndex << endl;
+      const int sampleIndex = blockIndex * blockSize;
 
-        vector<float> inputBlockSamples(blockSize);
-        vector<float> infoBlockSamples(blockSize);
-        vector<float> outBlockSamples(blockSize);
+      vector<float> inputBlockSamples(blockSize);
+      vector<vector<float>> outBlockSamplesCollection = decompBlock(
+        inputBlockSamples,
+        inputHighPassFilter,
+        infoHighPassFilter,
+        numberOfOuts,
+        blockIndex
+      );
+      cout << "outBlockSamplesCollection length:" << outBlockSamplesCollection.size() << endl;
+      cout << "outBlockSamplesCollection sample:" << outBlockSamplesCollection[3][1000] << endl;
 
-        buildBlockWithOverlap(inputSamples.data(), sampleIndex, blockSize, overlapFactor, inputBlockSamples);
-        buildBlockWithOverlap(infoSamples.data(), sampleIndex, blockSize, overlapFactor, infoBlockSamples);
+      // Copy block results to the larger sample vector.
+      // TODO: Cut down on the copying.
+      for (int outNumber = 0; outNumber < outBlockSamplesCollection.size(); ++outNumber) {
+        auto outBlockSamples = outBlockSamplesCollection[outNumber];
+        auto outChannelSamples = outChannelSamplesCollection[outNumber];
 
-        decompBlock(
-                inputBlockSamples,
-                infoBlockSamples,
-                inputHighPassFilter,
-                infoHighPassFilter,
-                outBlockSamples,
-                blockIndex
-        );
-
-        // TODO: Cut down on the copying.
-        for (int outBlockSampleIndex = 0; outBlockSampleIndex < blockSize; ++outBlockSampleIndex) {
-            *outStart = outBlockSamples[outBlockSampleIndex];
-            ++outStart;
+        cout << "outBlockSamples sample:" << outBlockSamples[1000] << endl;
+        //std::copy(outBlockSamples.begin(), outBlockSamples.end(), std::back_inserter(outChannelSamples));
+        for (int i = 0; i < outBlockSamples.size(); ++i) {
+          const int destIndex = blockSize * blockIndex + i;
+          if (destIndex >= outChannelSamples.size()) {
+            break;
+          }
+          outChannelSamples[destIndex] = outBlockSamples[blockIndex];
         }
+
+        cout << "outBlockSamples length:" << outBlockSamples.size() << endl;
+        cout << "outChannelSamples length:" << outChannelSamples.size() << endl;
+        // TODO: This is necessary, so it's a sign the overall approach is wrong.
+        outChannelSamplesCollection[outNumber] = outChannelSamples;
+      }
     }
+    cout << "End of decompChannel outChannelSamplesCollection length: " << outChannelSamplesCollection.size() << endl;
+    cout << "End of decompChannel sample: " << outChannelSamplesCollection[3][1000] << endl;
+    return outChannelSamplesCollection;
 }
 
-static void
-decompBlock(vector<float> &inputBlockSamples, vector<float> &infoBlockSamples, IIRFilter &inputHighPassFilter,
-            IIRFilter &infoHighPassFilter, vector<float> &outBlockSamples, int blockIndex) {
+static vector<vector<float>> decompBlock(
+  vector<float> &inputBlockSamples, IIRFilter &inputHighPassFilter,
+  IIRFilter &infoHighPassFilter, int numberOfOuts, int blockIndex) {
 
-    auto inputSample = inputBlockSamples.begin();
-    //auto outSample = outBlockSamples.begin();
-    //for (int i = 0; i < outBlockSamples.size(); ++i) {
-    //outBlockSamples[i] = inputSample[i];
-    //}
-    //return;
+  vector<vector<float>> outBlockSamplesCollection;
 
-    if (blockIndex == blockIndexToLog) {
-        logSignal("005-info-raw-b.txt", infoBlockSamples.size(), infoBlockSamples.data());
-        logSignal("010-input-raw-b.txt", inputBlockSamples.size(), inputBlockSamples.data());
+  auto inputSample = inputBlockSamples.begin();
+  for (int outNumber = 0; outNumber < numberOfOuts; ++outNumber) {
+    vector<float> outBlockSamples;
+    for (int i = 0; i < blockSize; ++i) {
+      outBlockSamples.push_back(1.0);//inputSample[i];
     }
+    cout << "outBlockSamples.size()" << outBlockSamples.size() << endl;
+    outBlockSamplesCollection.push_back(outBlockSamples);
+    cout << "outBlockSamplesCollection.back().size()" << outBlockSamplesCollection.back().size() << endl;
+    cout << "outBlockSamplesCollection.size()" << outBlockSamplesCollection.size() << endl;
+  }
 
-    // Drop high-pass for now.
+  return outBlockSamplesCollection;
+
+   // Drop high-pass for now.
     //inputHighPassFilter.processSamples(inputBlockSamples.data(), inputBlockSamples.size());
     //infoHighPassFilter.processSamples(infoBlockSamples.data(), infoBlockSamples.size());
-    if (blockIndex == blockIndexToLog) {
-        logSignal("006-info-highpass-b.txt", infoBlockSamples.size(), infoBlockSamples.data());
-        logSignal("020-input-highpass-b.txt", inputBlockSamples.size(), inputBlockSamples.data());
-    }
 
-    applyHannWindow(infoBlockSamples.data(), infoBlockSamples.size());
     applyHannWindow(inputBlockSamples.data(), inputBlockSamples.size());
-
-    // TODO: Include channel in filename.
-    if (blockIndex == blockIndexToLog) {
-        logSignal("007-info-hann-b.txt", infoBlockSamples.size(), infoBlockSamples.data());
-        logSignal("030-input-hann-b.txt", inputBlockSamples.size(), inputBlockSamples.data());
-    }
 
     // Run a real-only FFT on both signals.
     ComplexFFTArray inputFFTData;
-    ComplexFFTArray infoFFTData;
 
     for (int i = 0; i < inputBlockSamples.size(); ++i) {
         inputFFTData[i] = inputBlockSamples[i];
-        infoFFTData[i] = infoBlockSamples[i];
     }
 
     getFFT(inputFFTData);
-    getFFT(infoFFTData);
 
     //if (blockIndex == blockIndexToLog) {
     //logSignal("040-inputFFT-b.txt", fftSize, inputFFTData.data());
     //}
-
+/*
     FFTArray infoRealBins;
     getReal(infoFFTData, infoRealBins);
-    if (blockIndex == blockIndexToLog) {
-        logSignal("042-info-fft-real-b.txt", fftSize, infoRealBins.data());
-    }
-
 
     FFTArray infoImagBins;
     getImaginary(infoFFTData, infoImagBins);
@@ -279,4 +259,5 @@ decompBlock(vector<float> &inputBlockSamples, vector<float> &infoBlockSamples, I
     for (int i = 0; i < fftSize; ++i) {
         outBlockSamples[i] = ifftData[i];
     }
+*/
 }
