@@ -19,19 +19,21 @@ decompBlock(vector<float> &carrierBlockSamples, vector<float> &infoBlockSamples,
 static void getReducedCombinedAmpFactors(
         ComplexFFTArray &carrierFFTData, ComplexFFTArray &infoFFTData, FFTArray &reducedAmpFactors);
 
-static void decomp(AudioBuffer<float> &carrierBuffer, AudioBuffer<float> &infoBuffer,
+static void decomp(AudioBuffer<float> &inputBuffer,
                    double sampleRate,
-                   AudioBuffer<float> &outBuffer) {
+                   int bucketCount,
+                   vector<juce::AudioBuffer<float>> &outBuffers) {
 
-    int channelCount = carrierBuffer.getNumChannels();
-    int infoBufferChannelCount = infoBuffer.getNumChannels();
-    if (infoBufferChannelCount < channelCount) {
-        channelCount = infoBufferChannelCount;
+    int channelCount = inputBuffer.getNumChannels();
+    int inputBufferChannelCount = inputBuffer.getNumChannels();
+    if (inputBufferChannelCount < channelCount) {
+        channelCount = inputBufferChannelCount;
     }
     for (int ch = 0; ch < channelCount; ++ch) {
+        /*
         const int maxSamples = outBuffer.getNumSamples();
         // Copy the arrays into vectors.
-        vector<float> carrierSamples(carrierBuffer.getReadPointer(ch), carrierBuffer.getReadPointer(ch) + maxSamples);
+        vector<float> carrierSamples(inputBuffer.getReadPointer(ch), inputBuffer.getReadPointer(ch) + maxSamples);
         vector<float> infoSamples(infoBuffer.getReadPointer(ch), infoBuffer.getReadPointer(ch) + maxSamples);
         vector<float> outSamples(maxSamples);
 
@@ -54,6 +56,7 @@ static void decomp(AudioBuffer<float> &carrierBuffer, AudioBuffer<float> &infoBu
                 int x = 2;
             }
         }
+      */
     }
 }
 
