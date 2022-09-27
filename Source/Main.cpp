@@ -65,7 +65,6 @@ int main(int argc, char *argv[]) {
       outBuffers.push_back(outBuffer);
     }
 
-    //reconstruct(inputBuffer, outBuffer);
     decomp(inputBuffer, sampleRate, bucketCount, outBuffers);
 
     int bufferNumber = 0;
