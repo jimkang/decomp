@@ -33,21 +33,6 @@ static void getFFT(ComplexFFTArray &fftData) {
     dsp::FFT fft(fftPowerOf2);
     fft.performRealOnlyForwardTransform(fftData.data(), true);
     // The second param, dontCalculateNegativeFrequencies, is ignored in the fallback
-    // FFT impl. so we have to zero the second half ourselves if we don't want it.
-    //const int halfByteLength = fftData.size() * sizeof(float) / 2;
-    //zeromem(fftData.data() + halfByteLength, halfByteLength);
-    const int halfLength = fftData.size() / 2;
-    for (int i = 0; i < fftData.size(); ++i) {
-        if (i > halfLength) {
-            fftData[i] = 0;
-        }
-        //else {
-        //float absValue = abs(fftData[i]);
-        //if (absValue != 0 && absValue < minimumNonZeroFFTResult) {
-        //fftData[i] = (fftData[i] < 0 ? -1.0 : 1.0) * minimumNonZeroFFTResult;
-        //}
-        //}
-    }
 }
 
 static void getIFFT(FFTArray &realBins, FFTArray &imagBins, ComplexFFTArray &ifftData) {

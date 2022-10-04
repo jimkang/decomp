@@ -14,10 +14,9 @@ static vector<vector<float>> decompChannel(
 
 static vector<vector<float>> decompBlock(
   vector<float> &inputBlockSamples, IIRFilter &inputHighPassFilter,
-  IIRFilter &infoHighPassFilter, int numberOfOuts, int blockIndex);
+  int numberOfOuts, int blockIndex);
 
-static void getReducedCombinedAmpFactors(
-        ComplexFFTArray &inputFFTData, ComplexFFTArray &infoFFTData, FFTArray &reducedAmpFactors);
+static void getReducedCombinedAmpFactors(ComplexFFTArray &inputFFTData, FFTArray &reducedAmpFactors);
 
 static void decomp(AudioBuffer<float> &inputBuffer,
                    double sampleRate,
@@ -54,16 +53,16 @@ static void decomp(AudioBuffer<float> &inputBuffer,
 static vector<vector<float>> decompChannel(vector<float> &inputSamples,
   double sampleRate, int numberOfOuts) {
 
+    const int blockSize = 1 << numberOfOuts;
+
     const int maxBlocks = inputSamples.size() / blockSize;
     // Leave out the last partial block for now.
 
     auto inputStart = inputSamples.begin();
 
     IIRFilter inputHighPassFilter;
-    IIRFilter infoHighPassFilter;
     double freq = 5;
     inputHighPassFilter.setCoefficients(IIRCoefficients::makeHighPass(sampleRate, freq));
-    infoHighPassFilter.setCoefficients(IIRCoefficients::makeHighPass(sampleRate, freq));
 
     vector<vector<float>> outChannelSamplesCollection;
     for (int i = 0; i < numberOfOuts; ++i) {
@@ -79,7 +78,6 @@ static vector<vector<float>> decompChannel(vector<float> &inputSamples,
       vector<vector<float>> outBlockSamplesCollection = decompBlock(
         inputBlockSamples,
         inputHighPassFilter,
-        infoHighPassFilter,
         numberOfOuts,
         blockIndex
       );
@@ -115,8 +113,9 @@ static vector<vector<float>> decompChannel(vector<float> &inputSamples,
 
 static vector<vector<float>> decompBlock(
   vector<float> &inputBlockSamples, IIRFilter &inputHighPassFilter,
-  IIRFilter &infoHighPassFilter, int numberOfOuts, int blockIndex) {
+  int numberOfOuts, int blockIndex) {
 
+  const int blockSize = 1 << numberOfOuts;
   vector<vector<float>> outBlockSamplesCollection;
 
   auto inputSample = inputBlockSamples.begin();
@@ -131,133 +130,39 @@ static vector<vector<float>> decompBlock(
     cout << "outBlockSamplesCollection.size()" << outBlockSamplesCollection.size() << endl;
   }
 
-  return outBlockSamplesCollection;
+  applyHannWindow(inputBlockSamples.data(), inputBlockSamples.size());
 
-   // Drop high-pass for now.
-    //inputHighPassFilter.processSamples(inputBlockSamples.data(), inputBlockSamples.size());
-    //infoHighPassFilter.processSamples(infoBlockSamples.data(), infoBlockSamples.size());
+  // Run an FFT on the signal.
+  std::array<float, fftSize * 2> inputFFTData;
 
-    applyHannWindow(inputBlockSamples.data(), inputBlockSamples.size());
+  for (int i = 0; i < inputBlockSamples.size(); ++i) {
+      inputFFTData[i] = inputBlockSamples[i];
+  }
 
-    // Run a real-only FFT on both signals.
-    ComplexFFTArray inputFFTData;
+  const int fftOrder = numberOfOuts;
+  const int fftSize = 1 << fftOrder;
+  dsp::FFT fft(fftOrder);
+  // TODO: Use the imaginary values, look up bandpass filter impl. for reference.
+  fft.performRealOnlyForwardTransform(inputFFTData.data(), true);
+  //getFFT(inputFFTData);
 
-    for (int i = 0; i < inputBlockSamples.size(); ++i) {
-        inputFFTData[i] = inputBlockSamples[i];
-    }
+  auto maxLevel = juce::FloatVectorOperations::findMinAndMax (inputFFTData.data(), fftPowerOf2 / 2);
 
-    getFFT(inputFFTData);
+  for (int fftIndex = 0; fftIndex < fftSize/2; ++fftIndex) {
+    const float freq = fftIndex * fftSize / 2;
+    const float level = juce::jmap(
+      inputFFTData[fftIndex],
+      0.0f, juce::jmax(maxLevel.getEnd(), 1e-5f),
+      0.0f, 1.0f
+    );
+    cout << "Block " << blockIndex << ": freq " << freq << ", level " << level << endl;
+  }
 
-    //if (blockIndex == blockIndexToLog) {
-    //logSignal("040-inputFFT-b.txt", fftSize, inputFFTData.data());
-    //}
-/*
-    FFTArray infoRealBins;
-    getReal(infoFFTData, infoRealBins);
-
-    FFTArray infoImagBins;
-    getImaginary(infoFFTData, infoImagBins);
-    if (blockIndex == blockIndexToLog) {
-        logSignal("043-info-fft-imag-b.txt", fftSize, infoImagBins.data());
-    }
-
-    // Multiply the reduced real components of the input fft by the reduced
-    // combined amps.
-    FFTArray inputRealBins;
-    getReal(inputFFTData, inputRealBins);
-    if (blockIndex == blockIndexToLog) {
-        logSignal("045-input-fft-real-b.txt", fftSize, inputRealBins.data());
-    }
-
-    FFTArray inputImagBins;
-    getImaginary(inputFFTData, inputImagBins);
-    if (blockIndex == blockIndexToLog) {
-        logSignal("047-input-fft-imag-b.txt", fftSize, inputImagBins.data());
-    }
-
-    // NOTE: we are altering the things we square.
-    squareSignal(inputRealBins.data(), fftSize);
-    squareSignal(inputImagBins.data(), fftSize);
-    squareSignal(infoRealBins.data(), fftSize);
-    squareSignal(infoImagBins.data(), fftSize);
-    if (blockIndex == blockIndexToLog) {
-        logSignal("048-info-fft-real-sq-b.txt", fftSize, infoRealBins.data());
-        logSignal("048.5-info-fft-imag-sq-b.txt", fftSize, infoImagBins.data());
-        logSignal("049-input-fft-real-sq-b.txt", fftSize, inputRealBins.data());
-        logSignal("049.5-input-fft-imag-sq-b.txt", fftSize, inputImagBins.data());
-    }
-
-    FFTArray inputFFTSqAdded;
-    FFTArray infoFFTSqAdded;
-    FloatVectorOperations::add(infoFFTSqAdded.data(), infoRealBins.data(), infoImagBins.data(), fftSize);
-    FloatVectorOperations::add(inputFFTSqAdded.data(), inputRealBins.data(), inputImagBins.data(), fftSize);
-    if (blockIndex == blockIndexToLog) {
-        logSignal("050-input-rfft-added-b.txt", fftSize, inputFFTSqAdded.data());
-        logSignal("055-info-rfft-added-b.txt", fftSize, infoFFTSqAdded.data());
-    }
-
-    FFTArray inputFFTSqAddedRSqrt;
-    FFTArray infoFFTSqAddedSqrt;
-    // Why does this get so big?
-    rSqrtSignal(inputFFTSqAdded.data(), fftSize, inputFFTSqAddedRSqrt.data());
-    sqrtSignal(infoFFTSqAdded.data(), fftSize, infoFFTSqAddedSqrt.data());
-    if (blockIndex == blockIndexToLog) {
-        logSignal("060-input-rsqrt-b.txt", fftSize, inputFFTSqAddedRSqrt.data());
-        logSignal("070-info-sqrt-b.txt", fftSize, infoFFTSqAddedSqrt.data());
-    }
-
-    FFTArray combinedAmpFactors;
-    FloatVectorOperations::multiply(
-            combinedAmpFactors.data(), // dest
-            inputFFTSqAddedRSqrt.data(),
-            infoFFTSqAddedSqrt.data(),
-            fftSize);
-    //for (int i = 0; i < combinedAmpFactors.size(); ++i) {
-    //combinedAmpFactors[i] = inputFFTSqAddedRSqrt[i] * infoFFTSqAddedSqrt[i];
-    //}
-    if (blockIndex == blockIndexToLog) {
-        logSignal("080-amp-factor-roots-multiplied-b.txt", fftSize, combinedAmpFactors.data());
-    }
-
-    // Turn down the combined amps.
-    FFTArray reducedAmpFactors;
-    FloatVectorOperations::multiply(
-            reducedAmpFactors.data(),
-            combinedAmpFactors.data(),
-            1.0 / hannOverlapGain,// * smallifyFactor,
-            fftSize);
-
-    FFTArray inputRealWithReducedAmpFactors;
-    FloatVectorOperations::multiply(
-            inputRealWithReducedAmpFactors.data(),
-            inputRealBins.data(),
-            reducedAmpFactors.data(),
-            fftSize);
-    if (blockIndex == blockIndexToLog) {
-        logSignal("100-input-fft-real-x-reduced-amp-factors-b.txt", fftSize, inputRealWithReducedAmpFactors.data());
-    }
-
-    // Multiply the imaginary components of the input fft by the reduced
-    // combined amps.
-    FFTArray inputImagWithReducedAmpFactors;
-    FloatVectorOperations::multiply(
-            inputImagWithReducedAmpFactors.data(),
-            inputImagBins.data(),
-            reducedAmpFactors.data(),
-            fftSize);
-    if (blockIndex == blockIndexToLog) {
-        logSignal("150-input-fft-imag-x-reduced-amp-factors-b.txt", fftSize, inputImagWithReducedAmpFactors.data());
-    }
-
-    ComplexFFTArray ifftData;
-    getIFFT(inputRealWithReducedAmpFactors, inputImagWithReducedAmpFactors, ifftData);
-    //getIFFT(inputRealBins, inputImagBins, ifftData);
-
-    applyHannWindow(ifftData.data(), ifftData.size());
+    //applyHannWindow(ifftData.data(), ifftData.size());
 
     // Copy the results to the channel.
-    for (int i = 0; i < fftSize; ++i) {
-        outBlockSamples[i] = ifftData[i];
-    }
-*/
+    //for (int i = 0; i < fftSize; ++i) {
+    //   outBlockSamples[i] = ifftData[i];
+    //}
+  return outBlockSamplesCollection;
 }
